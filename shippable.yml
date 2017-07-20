@@ -15,8 +15,8 @@ env:
     - CODE_COVERAGE_DIR=$SHIPPABLE_REPO_DIR/shippable/codecoverage
     - TESTS_LOC_DIR=$SHIPPABLE_REPO_DIR/tests
     - MOD_LOC=$SHIPPABLE_REPO_DIR/node_modules/.bin/
-    - DOCKER_REPO=ci-push-docker-hub
-    - DOCKER_ACC=devopsrecipes # {account name}
+    - DOCKER_REPO=ci_push_docker_hub
+    - DOCKER_ACC=avinci # {account name}
 
 build:
 
@@ -43,5 +43,5 @@ integrations:
   # adding docker hub integration so that credentials are available to CI Job
   # http://docs.shippable.com/integrations/imageRegistries/dockerHub/
   hub:
-    - integrationName: dr-dockerhub
+    - integrationName: demo_dh
       type: docker
